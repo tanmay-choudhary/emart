@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { addCart, delCart } from "../redux/action";
+import { Checkout } from "./Checkout";
 
 const Cart = () => {
   const state = useSelector((state) => state.handleCart);
@@ -69,12 +70,7 @@ const Cart = () => {
       <>
         <div className="container">
           <div className="row">
-            <NavLink
-              to="/checkout"
-              className="btn btn-outline-dark mb-5 w-25 mx-auto"
-            >
-              Proceed to Checkout
-            </NavLink>
+            <Checkout/>
           </div>
         </div>
       </>
