@@ -45,6 +45,7 @@ export function Products() {
              <div className="col-md-3">
                 <Skeleton height={350}/>
              </div>
+             <h3>Loading...</h3>
             </>
         )
     }
